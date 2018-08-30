@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Afilliate ID Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="onLoad();">
+    <div class="container">
+        <div class="tile is-parent">
+            <div class="tile is-child ">
+                <article class="tile is-child">
+                    <p class="title">Afilliate ID - Generator</p>
+                    <p class="subtitle">SAVES AS JSON FILES..</p>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+                <div class="tile is-child box">
+                    <form id="myform" type="post" class="box">
+                        <div class="field">
+                            <label for="Name" class="label">Name :</label>
+                            <input class="input" id="Name" required="required" type="text" value="" name="Name" size="20" />
+                        </div>
+                        <div class="field">
+                            <label for="Afilliate_ID" class="label">Afilliate ID :</label>
+                            <input class="input" id="AI" required="required" type="text" value="" name="Afilliate_ID" size="20" disabled />
+                        </div>
+                        <div class="field">
+                            <label for="FB_P_ID" class="label">Facebook Pixel ID :</label>
+                            <input class="input" id="FBP" required="required" type="text" value="" id="Facebook Pixel ID" name="FB_P_ID" size="20" />
+                        </div>
+                        <div class="field">
+                            <input type="button" id="btn" name="btn" class="button is-primary" value="Add Row" />
+                            <input type="submit" id="btn2" name="btn2" class="button is-link" value="Save JSON" />
+                            <input type="button" id="btn3" name="btn3" class="button is-success" value="Display JSON" />
+                            <input type="button" id="btn4" name="btn4" class="button is-warning" value="Copy to Clipboard" />
+                        </div>
+                    </form>
+                </div>
+                <div class="tile is-child box">
+                    <div id="data" class="tile is-child box">
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <div class="tile is-child box" id="tt">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+                <p class="subtitle">Currently saving to your /Downloads directory, working on a fix to possibly modify
+                existing JSON file in the root directory of the app and overwriting it back.</p>
+                <div class="content">
+                    <!-- Content -->
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

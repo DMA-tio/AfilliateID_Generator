@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Example1",
+        "Afilliate_ID": "00001",
+        "Facebook Pixel ID": "0000000000000001"
+    },
+    {
+        "Name": "Example2",
+        "Afilliate_ID": "00002",
+        "Facebook Pixel ID": "0000000000000002"
+    },
+    {
+        "Name": "Example3",
+        "Afilliate_ID": "00003",
+        "Facebook Pixel ID": "0000000000000003"
+    }
+]
